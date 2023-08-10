@@ -1,0 +1,457 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+#wrapper {}
+
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: floralwhite;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    /* position: relative; */
+    display: block;
+}
+
+
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
+    color: aquamarine;
+    background-color: gray;
+
+}
+
+
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    box-shadow: 0 0 10px #888888;
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0 16px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .nav-arrow-down {
+    font-size: 10px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+/* #header input[type=text] {
+    line-height: 30px;
+    padding: 0 21px;
+} */
+
+#header input {
+    float: right;
+    margin: 5px 0;
+    line-height: 30px;
+    padding: 0 21px;
+}
+
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/hanoi.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 50px;
+    font-size: 30px;
+}
+
+#slider .text-description {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+}
+
+
+
+/* .mySlides {
+    display: none;
+    margin-top: 46px;
+    left: 0;
+}
+
+.slider--img {
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow-container {
+    position: block;
+    margin: auto;
+} */
+
+/* Next & previous buttons */
+/* .prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+} */
+
+/* Position the "next button" to the right */
+/* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+} */
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+} */
+
+/* Caption text */
+/* .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+} */
+
+/* Number text (1/3 etc) */
+/* .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+} */
+
+/* The dots/bullets/indicators */
+/* .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+} */
+
+/* .active,
+.dot:hover {
+    background-color: #717171;
+} */
+
+/* Fading animation */
+/* .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+} */
+
+/* On smaller screens, decrease text size */
+/* @media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+} */
+
+#content {}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .content-sub-heading {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.4;
+}
+
+#content .content-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+    opacity: 0.7;
+}
+
+#content .information {
+    margin-top: 46px;
+    overflow: hidden;
+}
+
+#content .information-item {
+    float: left;
+    width: 33.333333333%;
+    text-align: center;
+}
+
+#content .information-name {
+    font-size: 15px;
+}
+
+#content .information-item img {
+    /* width: 10%; */
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 5px;
+}
+
+#content .content-booking {
+    background-color: black;
+}
+
+#content .tickets-list {
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+}
+
+#content .tickets-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+#content .tickets-list .soldout {
+    float: right;
+    width: 100px;
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+    text-align: center;
+}
+
+#content .tickets-list .sold {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    /* chỉnh cho về chính giữa */
+    margin-top: -3px;
+}
+
+#place-list {
+    width: 800px;
+}
+
+.place-item {}
+
+.place-img {}
+
+.place-body {
+    background-color: #fff;
+}
+
+.place-buy-btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px 16px;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.place-buy-btn:hover {
+    background-color: #888888;
+    color: aqua;
+}
+
+
+
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-info p i {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.send-btn {
+    float: right;
+    cursor: pointer;
+}
+
+
+
+
+
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.socials {
+    font-size: 24px;
+}
+
+.socials a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: #111111;
+}
+
+.copyright {
+    margin-top: 16px;
+    color: #757575;
+}
